@@ -1,0 +1,1306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+html {
+    font-size: 62.5%; 
+}
+  
+body {
+    font-size: 15px;
+    font-family: "Rubik", sans-serif;
+    color: #afafaf;
+    line-height: 1.4;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 1349px;
+   
+}
+
+  
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    color: #ffffff;
+    font-family: "Prata", sans-serif;
+}
+  
+p {
+    font-size: 1.5rem;
+    color: #afafaf;
+    font-weight: 400;
+    line-height: 1.6; 
+}
+    p:last-child {
+    margin-bottom: 0; 
+}
+.bodymenu{
+    background-color: #242424;
+}
+.header-top{
+    padding-top:8px;
+    padding-bottom:8px;
+    border-bottom: 1px solid #2d2d2d;
+    background-color: #242424;
+    height:30px;
+        
+        
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.top-header{
+    width: 90%;
+    display: flex;
+    
+    
+    
+}
+.top-header .social-contact{
+    display: flex;
+   
+    
+}
+.top-header .social-contact ul{
+    display: flex;
+   
+}
+.top-header .social-contact ul li{
+    display: flex;
+    
+   
+}
+.top-header .social-contact .social__item{
+    
+    align-items: center;
+    margin:2px;
+}
+
+.top-header .social-contact ul li a{
+    padding: 7px 7px;
+    text-decoration: none;
+    color: #afafaf;
+    background-color: #2f2f2f;
+    margin-bottom: 0px;
+    font-size: 15px;
+    border: 2px solid #2d2d2d;
+    border-radius:50%;
+    width: 12px;
+    height:12px;
+    text-align: center;
+    line-height: 12px;
+    transition: 0.4sn ease;
+
+   
+}
+.top-header .social-contact ul li a:hover{
+    color: #ffffff;
+    transition: all 1s ease;
+}
+.top-header .social-contact{
+    width: 780px;
+}
+.top-header .social-contact p{
+    font-size:12px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    padding-left: 10px;
+    line-height: 30px;
+    
+}
+.top-header .social-contact p span{
+    color:#a8741a;
+}
+
+.header-top-nav{
+display: flex;
+justify-content: center;
+color: #ffffff;
+width: 390px;
+padding: 5px;
+font-size: 12px;
+
+
+
+}
+.header-top-nav .header-top-nav__item{
+    padding: 0 32px;
+    border-left: 1px solid #2d2d2d;
+    color: #ffffff;
+    cursor: pointer;
+ 
+}
+.header-top-nav .header-top-nav__item .dropdown a:hover{
+    color: #a8741a;
+    transition: all 1s ease;
+
+
+}
+.header-middle{
+    padding: 48px 0;
+    border-bottom: 1px solid #2d2d2d;
+    background-color: #242424;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.5rem;
+}
+.header-middle .container{
+    height: 57px;
+}
+.header-middle .row{
+    display: flex;
+    width: 1349px;
+    height: 57px;
+    padding-left: 10px;
+}
+.header-middle .row .contact-info{
+    display: flex;
+    width: 487.5px;
+    height: 37px;
+      
+
+}
+.header-middle .row .contact-info img{
+    width: 32px;
+    height: 32px;
+
+
+}
+.header-middle .row .contact-info p{
+    margin-bottom: 0;
+    font-size:14px;
+    padding-left: 18px;
+    line-height: 1;
+    color:#a8741a;
+}
+.headerMenu{
+    height: 65px;
+    border-bottom: 1px solid #2d2d2d;
+    background-color:#242424 ;
+    position: -webkit-sticky; /* Safari */
+	position: sticky;
+    top: 0;
+
+
+}
+.headerMenu .menuLink{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.headerMenu .menuLink ul{
+    width: 1170px;
+    height: 65px;
+
+}
+
+.headerMenu .menuLink li{
+   display: flex;
+  
+}
+.headerMenu  .menuLink li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 22px; 
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: block;
+    font-family: "Prata", sans-serif;
+  
+}
+.headerMenu  .menuLink li a:hover{
+    color: #a8741a;
+    transition: all 1s ease;
+}
+
+   /*Slider Kısmı*/
+
+
+#mainSlider{
+
+    height: 634px;
+    background: url('../img/slider1.jpg') center center no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #2d2d2d;
+   
+    
+}
+#mainCaption{
+    height: 634px;
+   
+  
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    
+    line-height: 50px;
+    padding-left: 100px;
+    
+}
+.caption h5{
+    font-size: 16px;
+    color: #a8741a;
+    
+}
+.caption h1{
+    font-size: 60px;
+    color: #ddd;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom:15px;
+    margin-top: 0;
+    font-family: "Prata", sans-serif;
+   
+}
+.caption p{
+    font-size: 16px;
+    color: #d8d8d7;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: "Rubik", sans-serif;
+    line-height: 24px;
+    max-width: 600px;
+   
+}
+.caption p strong{
+    font-weight: 500;
+    font-size: 30px;
+    padding-left: 10px;
+    line-height: 70px;
+    color: #a8741a;
+}
+.slide-btn{
+    width: 78px;
+    height: 46px;
+    background: none;
+    font-size: 13px;
+    color: #e8e8e7;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 45px;
+    border: 2px solid #a8741a;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.slide-btn a{
+  
+    text-decoration: none;
+    color: #babab9;
+    font-size: 16px;
+    font-family: "Prata", sans-serif;
+}
+.slide-btn:hover{
+    
+    background-color: #a8741a;
+    transition: all 0.4s ease;
+}
+
+
+  /*mainWatches kısmı */
+
+#mainWatches{
+    height: 305px;
+    margin: 50px 0px;
+    position: relative;
+    
+}
+
+#mainWatches .mainBody{
+    height: 305px;
+    width: 100%;
+    position: relative;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+#mainWatches  .col3{
+
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+   
+    
+}
+
+
+#mainWatches  .col3 .item{
+    
+    position: relative;
+    height: 246px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  
+
+}
+#mainWatches  .col3 .item .promo{
+  display: flex;
+ 
+}
+#mainWatches  .col3 .item .promo__box{
+    position: relative;
+    height: 240px;
+    display: inline-block;
+    overflow: hidden;
+}
+#mainWatches  .col3 .item .promo__box img{
+    width:370px ;
+    height: 240px;
+    position: relative;
+    border-radius: 5px;
+}
+#mainWatches  .col3 .item .promo__box img:hover{
+transform: scale(1.02); 
+transition:all.5s ease-in-out;
+
+}
+#mainWatches  .col3 .item .promo__content{
+    text-align: left;
+    left: 30px;
+    top: auto;
+    bottom: 24px;
+    transform: translateY(0);
+    position: absolute;
+    width: 250px;
+    height: 88px;
+
+    
+}
+
+#mainWatches  .col3 .item .promo__content span{
+    display: block;
+    transition: all 0.5s ease-in-out;
+    
+    
+    
+}
+#mainWatches  .col3 .item .promo__content .promo__label{
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: #fff;
+    font-weight: 300;
+    font-family: "Rubik", sans-serif;
+}
+
+.promo__content:hover .promo__label{
+    animation: yazi-anim 400ms;
+}
+.promo__content:hover .promo__name{
+    animation: yazi-anim 600ms;
+}
+.promo__content:hover .promo__price{
+    animation: yazi-anim 800ms;
+}
+@keyframes  yazi-anim{
+    0%{
+        opacity: 0;
+      transform: translateY(50px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ 
+}
+#mainWatches  .col3 .item .promo__content .promo__name{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#a8741a;
+    font-family: "Prata", sans-serif;
+}
+#mainWatches  .col3 .item .promo__content .promo__price{
+    font-size: 15px;
+    color:#fff;
+}
+
+       /* GALERİ KISMI*/
+
+
+#galeri{
+    height: 885px;
+    position: relative;
+    margin: 50px 0px;
+    border-top: 1px solid #2d2d2d;
+}
+
+#galeri .container .galeriBody{
+
+    height: 885px;
+    width: 100%;
+    position: relative;
+    
+
+}
+#galeri .container .galeriBody .galeriText{
+    height: 100px;
+    position: relative;
+    display: flex;
+   align-items: center;
+   margin-top: 50px;
+   
+    
+  
+}
+#galeri .container .galeriBody .galeriText h1{
+    font-family: "Prata", sans-serif;
+    font-size: 24px;
+    position: relative;
+    
+}
+#galeri .galeriBody .galeriText::before{
+    position: absolute;
+    content: " ";
+    width: 90%;
+    height: 2px;
+    background: #2d2d2d;
+    left: 110px;
+    right: 0;
+    top: 50%;
+    
+   
+}
+#galeri .galeriBody .galeriMenu{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 716px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#galeri .galeriBody .galeriMenu .col5{
+    width:200px;
+    height: 320px;
+    position: relative;
+    text-align: left;
+    padding: 15px;
+    transition: all 0.4s ease-out 0s;
+    display: flex;
+    
+    
+
+}
+#galeri .galeriBody .galeriMenu .col5 .item2{
+    position: relative;
+    width:200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+   
+  
+}
+
+#galeri .galeriBody .galeriMenu .col5 .item2 .zoom{
+    position: relative;
+    width:180px;
+    height: 180px;
+    padding:20px 12px 12px;
+}
+
+#galeri .galeriBody .galeriMenu .col5 .item2 .zoom img{
+    position: relative;
+    width:180px;
+    height: 180px;
+   
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .zoom img:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext{
+    width: 200px;
+    height: 80px;
+   
+    text-align: center;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext h5{
+    color: #afafaf;
+    font-size: 13px;
+    padding: 10px 0;
+    display: inline-block;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext h1{
+    display: block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Prata", sans-serif;
+    line-height: 1.7px;
+    padding: 10px 0;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext h1:hover{
+    color: #a8741a;
+    cursor: pointer;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext  h2{
+    color: #a8741a;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+#galeri .galeriBody .galeriMenu .col5 .item2 .itemtext  h2 span{
+    color: #afafaf;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+           /*Parallax Kısmı*/
+#parallax{
+    height:226px;
+    background: url('../img/parallax.jpg') no-repeat scroll center/cover;
+    padding: 80px 0;
+    
+}
+#parallax .parallaxTop{
+    height: 226px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#parallax .parallaxTop h5{
+    text-align: center;
+    width: 100%;
+    height:19px;
+    line-height: 16px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #a8741a;
+    margin-bottom: 5px;
+   
+
+}
+#parallax .parallaxTop h1{
+    text-align: center;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: "Prata", sans-serif;
+    margin-bottom: 25px;
+   
+    
+
+}
+#parallax .parallaxTop p{
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    font-size: 15px;
+    color: #afafaf;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 16px;
+   
+} 
+.parallaxTop:hover h5{
+    animation: yazi-anim 400ms;
+}
+.parallaxTop:hover h1{
+    animation: yazi-anim 600ms;
+}
+.parallaxTop:hover p {
+    animation: yazi-anim 800ms;
+}
+@keyframes  yazi-anim{
+    0%{
+        opacity: 0;
+      transform: translateY(50px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ 
+}
+#parallax .parallaxTop .btn{
+    width: 78px;
+    height: 46px;
+    background: none;
+    font-size: 13px;
+    color: #e8e8e7;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 45px;
+    border: 2px solid #a8741a;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+#parallax .parallaxTop a{
+    text-decoration: none;
+    color: #babab9; 
+    font-size: 16px;
+    font-family: "Prata", sans-serif;
+}
+#parallax .parallaxTop .btn:hover{
+    
+    background-color: #a8741a;
+    transition: all 0.4s ease;
+}
+#diamond{
+    height: 683px;
+    padding: 50px 0;
+    position: relative;
+    
+
+    
+}
+#diamond .diamondBody{
+    height: 683px;
+    position: relative;
+   
+}
+#diamond .diamondBody .itemText {
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    
+}
+#diamond .diamondBody .itemText h1{
+    position: relative;
+    width:300px;
+    font-family: "Prata", sans-serif;
+    font-size: 20px;
+   
+    
+}
+
+#diamond .diamondBody .itemText::before{
+    position: absolute;
+    content: " ";
+    width: 73%;
+    height: 2px;
+    background: #2d2d2d;
+    left: 300px;
+    right: 0;
+    top: 50%;
+    overflow: hidden;
+   
+}
+#diamond .diamondBody .diamondMenu{
+    height: 583px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+}
+#diamond .diamondBody .diamondMenu .col3{
+    flex-grow: 1;
+    width: 50%;
+    padding:20px ;
+
+}
+#diamond .diamondBody .diamondMenu .col3 .item3{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:543px;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom{
+    width: 100%;
+    position: relative;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .imageOver{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .diamondOverlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(230, 221, 222, 0.4);
+    overflow: hidden;
+    height: 100%;
+    transition: .5s ease;
+    width: 0;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom:hover .diamondOverlay{
+    width: 100%;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .diamondOverlay2{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(230, 221, 222, 0.4);
+    overflow: hidden;
+    height: 100%;
+    transition: .5s ease;
+    width: 0;
+}
+#diamond .diamondBody .diamondMenu .col3 .item3 .zoom:hover .diamondOverlay2{
+    width: 100%;
+}
+.diamondText{
+    white-space: nowrap;
+    color: #f7f4f0;
+    font-size: 30px;
+    font-family: "Prata", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-shadow: 2px 2px #242424
+
+
+}
+.item3  .itemtext3{
+     height: 190px;
+}
+.item3  .itemtext3 h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Prata", sans-serif;
+    padding: 10px;
+    color: #a8741a;
+    
+}
+.item3  .itemtext3 p{
+    padding: 0 10px;
+}
+.footerArea{
+    position: relative;
+    height: 400px;
+    padding: 40px 0;
+    border-top: 1px solid #2d2d2d;
+    
+}
+.footerBody{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.footerBody .footerTop{
+    position: relative;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    
+}
+.footerBody .col4{
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    height:260px;
+    padding: 20px;
+    flex-grow: 1;
+   
+}
+.footerItem{
+    position: relative;
+    height:260px;
+   
+}
+.footerItem .socialLinks{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    padding-top:25px ;
+}
+
+.socialLinks li{
+    width: auto;
+    position: relative;
+    display: flex;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.socialLinks li a{
+    
+   padding:7px;
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 20px;
+    border: 2px solid #2d2d2d;
+    border-radius:50%;
+    width: 20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    transition: 0.4sn ease;
+    position: absolute;
+
+   
+}
+.socialLinks li a:hover{
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.footerItem h3{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    
+}
+.footerItem h4{
+    font-size: 20px;
+    text-align: center;
+
+}
+.footerExtra li{
+    padding: 5px 0;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+.footerExtra li a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#afafaf;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.footerExtra li:hover{
+   
+   
+    transform: translate(10px);
+   
+}
+.footerExtra li a:hover{
+    color: #a8741a;
+
+}
+.footerContact li{
+    padding: 5px 0;
+    font-size: 15px;
+    color:#afafaf;
+}
+.footerContact li a{
+    text-decoration: none;
+    color:#afafaf;
+}
+.widget-product{
+    position: relative;
+    height:380px;
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    position: relative;
+    display: flex;
+    height:100px;
+    padding-top: 10px;
+}
+.line{
+    height: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.product img{
+    width: 80px;
+    height: 80px;
+}
+.product .productimg{
+    width: 80px;
+    height: 80px;
+}
+
+.productText{
+    width: 290px;
+    height: 86px;
+    padding-left: 20px;
+    line-height: 25px;
+     
+}
+.productText h5{
+    font-size: 12px;
+    color: #afafaf;
+    font-family: "Rubik", sans-serif;
+}
+.productText h1{
+    display: block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Prata", sans-serif;
+    cursor: pointer;
+}
+.productText h1:hover{
+    color: #a8741a;
+}
+.productText h2{
+    color: #a8741a;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+.productText  h2 span{
+    color: #afafaf;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footerLower{
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #2d2d2d;
+    
+
+}
+.footerLower .copyright a{
+    font-size: 15px;
+    color: #afafaf;
+    font-weight: 400;
+    line-height: 15px;
+    text-decoration: none;
+
+}
+.footerLower .copyright .text{
+    color: #a8741a;
+}
+
+/* galeri sayfası*/
+
+
+.page{
+    height: 63px;
+    padding:60px 0;
+}
+.page .pageTitle{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .pageTitle h1{
+    font-size: 45px;
+    font-family: "Prata", sans-serif;
+    color: #a8741a;
+
+}
+.imgProduct{
+    height: 600px;
+    position: relative;
+ 
+}
+.imgProduct .imgBody{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.imgProduct .imgBody .imgMenu{
+    display: flex;
+    position: relative;
+}
+.imgProduct .imgBody .imgMenu .col2{
+    width: 50%;
+    height: 600px;
+    position: relative;
+}
+.imgProduct .imgBody .imgMenu .col2 .item{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   justify-content: space-between;
+    align-items: center;
+
+}
+.imgProduct .imgBody .imgMenu .col2 .item .imgPage{
+    position: relative;
+    height: 275px;
+    width: 275px;
+    
+}
+.imgProduct .imgBody .imgMenu .col2 .item .imgPage img{
+    height: 273px;
+    width: 273px;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .imgPage img:hover{
+    transform: scale(1.04);
+    transition: all 0.4s ease;
+
+}
+
+.imgProduct .imgBody .imgMenu .col2 .item .text{
+    width: 100%;
+    height: 280px;
+    display: flex;
+
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext{
+    width:100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext .list{
+    padding-bottom: 8px;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext .list li a{
+    color: #a8741a;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 5px;
+    display: inline-block;
+    color: #a8741a;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext h2 span{
+    color: #afafaf;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text:first-child .itemtext {
+    border-bottom: 1px solid #2d2d2d;
+
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext .btn{ 
+    width: 68px;
+    height: 36px;
+    background: none;
+    font-size: 13px;
+    color: #e8e8e7;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 45px;
+    border: 2px solid #a8741a;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext a{
+  
+    text-decoration: none;
+    color: #babab9;
+    font-size: 16px;
+    font-family: "Prata", sans-serif;
+}
+.imgProduct .imgBody .imgMenu .col2 .item .text .itemtext .btn:hover{
+    
+    background-color: #a8741a;
+    transition: all 0.4s ease;
+}
+
+/* Hakkında sayfası*/
+
+.About{
+    height: 445px;
+    width: 100%;
+    position: relative;
+    background-color: #2e2e2e;;
+
+}
+.aboutMenu{
+    height: 445px;
+    width: 100%;
+    display: flex;
+
+}
+.aboutMenu .col2{
+    width: 50%;
+    height: 445px;
+   
+}
+.imgAbout img{
+    width: 100%;
+    height: 445px;
+}
+.aboutMenu .itemtext{
+    width: 100%;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMenu .itemtext h1{
+    font-size: 27px;
+    text-transform: uppercase;
+    
+}
+.aboutMenu .itemtext p{
+    padding: 40px 40px;
+}
+.aboutMenu .itemtext .btn{ 
+    width: 105px;
+    height: 36px;
+    background: none;
+    font-size: 13px;
+    color: #e8e8e7;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #a8741a;
+}
+.aboutMenu .itemtext a{
+  
+    text-decoration: none;
+    color: #babab9;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+}
+.aboutMenu .itemtext .btn:hover{
+    
+    background-color: #545454;
+    transition: all 0.4s ease;
+}
+/* İletişim sayfası*/
+.contact{
+    width:1349px;
+    height: 900px;
+    position: relative;
+}
+.contactMenu{
+    width:1349px;
+    height: 900px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contactMenu .col2{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.contactMenu .googleMap{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.contactLower{
+    width: 100%;
+    height: 326px;
+    padding:60px 0;
+  
+    
+
+}
+.contactLower h3{
+    text-transform: capitalize;
+    font-size:25px;
+    color: #ffffff;
+    line-height: 1.35;
+    border-bottom: 1px solid #2d2d2d;
+}
+.contact-form{
+    height: 285px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label{
+    width: 1000px;
+    height: 40px;
+   
+}
+.contact-form input{
+    width: 1000px;
+    height: 40px;
+    margin: 10px 0;
+    background-color: #333333;
+    color: #afafaf;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+.contact-form .extra-wrap{
+    width: 1056px;
+    height: 66px;
+    margin: 10px 0;
+    background-color: #333333;
+    color: #afafaf;
+}
+.contact-form .extra-wrap textarea{
+    width: 1050px;
+    height: 60px;
+    border: 1px solid #333333;
+    background-color: #333333;
+    color: #afafaf;
+    border-radius: 3px;
+    
+
+}
+
+
+.contact-form .button{
+    margin-top: 18px;
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    text-align:center;
+    background-color: #333333;
+    float: right;
+    border-radius: 3px;
+
+}
+.contact-form .button a{
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 18px;
+}
+.contact-form .button:hover{
+    transition: all .4s ease;
+    background-color: #a8741a;
+}
