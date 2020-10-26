@@ -14,7 +14,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 1349px;
+  
    
 }
 
@@ -881,12 +881,15 @@ transition:all.5s ease-in-out;
 }
 .footerItem h4{
     font-size: 20px;
-    text-align: center;
+   
 
+}
+.footerTop .col4:nth-last-child(3){
+    display: flex;
+    justify-content: center;
 }
 .footerExtra li{
     padding: 5px 0;
-    text-align: center;
     transition: all .4s ease-in-out;
 }
 .footerExtra li a{
@@ -1249,12 +1252,17 @@ transition:all.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
-.label{
-    width: 1000px;
-    height: 40px;
+
+.text-form{
+    width: 50px;
+    height: 20px;
+    padding-right: 10px;
+   
    
 }
+
 .contact-form input{
     width: 1000px;
     height: 40px;
@@ -1263,26 +1271,26 @@ transition:all.5s ease-in-out;
     color: #afafaf;
     border: 1px solid #333333;
     border-radius: 3px;
-}
-
-.contact-form .extra-wrap{
-    width: 1056px;
-    height: 66px;
-    margin: 10px 0;
-    background-color: #333333;
-    color: #afafaf;
-}
-.contact-form .extra-wrap textarea{
-    width: 1050px;
-    height: 60px;
-    border: 1px solid #333333;
-    background-color: #333333;
-    color: #afafaf;
-    border-radius: 3px;
     
-
 }
-
+.mesaj{
+    width: 1072px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+.contact-form textarea{
+    width: 1000px;
+    height: 40px;
+    background-color: #333333;
+    color: #afafaf;
+    border: 1px solid #333333;
+    border-radius: 3px;
+   
+}
 
 .contact-form .button{
     margin-top: 18px;
