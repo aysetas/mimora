@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="shortcut icon" href="img/icon.png">
+<!-- bxSlider CSS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+    
 
     <body cz-shortcut-listen="true" class="bodymenu">
 
@@ -125,20 +130,44 @@
 
         </header>
                     <!--Slider kısmı-->
-        <section id="mainSlider" class="slider">
-            
-            <div id="mainCaption" class="caption" >
-                
-                    <h5 >Exclusive Offer -20% Off This Week</h5>
-                    <h1 >H-Vault Classico</h1>
-                    <p >H-Vault Watches Are A Lot Like Classic American Muscle Cars - Expect For The American Part That Is. </p>
-                    <p >Starting At <strong>$1.499.00</strong></p>
-                    <div class="slide-btn">
-                        <a href="#">SATIN AL</a>
-                    </div>
-                
-            </div>
-        </section>
+  
+                    <ul  class="bxslider1">
+                        
+                        <li>
+                            <div class="caption">
+                              <h5>Exclusive Offer -20% Off This Week</h5>
+                              <h1>H-Vault Classico</h1>
+                              <p>H-Vault Watches Are A Lot Like Classic American Muscle Cars - Expect For The American Part That Is. </p>
+                              <p>Starting At <strong>$1.499.00</strong></p>
+                              <a href="#" class="slider-btn">SATIN AL </a> 
+                            </div> 
+                            <img src="img/slider1.jpg" />
+                               
+                        </li>
+                        <li>
+                            <div class="caption">
+                                <h5>Exclusive Offer -20% Off This Week</h5>
+                                <h1>H-Vault Classico</h1>
+                                <p>H-Vault Watches Are A Lot Like Classic American Muscle Cars - Expect For The American Part That Is. </p>
+                                <p>Starting At <strong>$1.499.00</strong></p>
+                                <a href="#" class="slider-btn">SATIN AL </a> 
+                            </div> 
+                            <img src="img/slider2.jpg" />
+                        </li>
+                        <li>
+                            <div class="caption">
+                                <h5>Exclusive Offer -20% Off This Week</h5>
+                                <h1>H-Vault Classico</h1>
+                                <p>H-Vault Watches Are A Lot Like Classic American Muscle Cars - Expect For The American Part That Is. </p>
+                                <p>Starting At <strong>$1.499.00</strong></p>
+                                <a href="#" class="slider-btn">SATIN AL </a> 
+                            </div> 
+                            <img src="img/slider3.jpg" />
+                        </li>
+                     
+                    </ul>    
+   
+              
                    <!--AnaSaat kısmı--> 
         <section id="mainWatches" class="sectionArea">
             <div class="container">
@@ -327,7 +356,8 @@
                 </div>
             </div>
         </section>
-
+   
+        
                       <!--Parallax kısmı-->
         <section id="parallax" class="sectionArea">
             <div class="parallaxTop">
@@ -338,8 +368,24 @@
             </div>
 
         </section>
+
+        <section class="watchSlider">
+            <div class="container">
+               
+                <ul  class="bxslider">
+                    <li><img src="img/watch1.jpg" /></li>
+                    <li><img src="img/watch2.jpg" /></li>
+                    <li><img src="img/watch3.jpg" /></li>
+                    <li><img src="img/watch4.jpg" /></li>
+                    <li><img src="img/watch5.jpg" /></li>
+                    <li><img src="img/watch6.jpg" /></li>
+                    
+            
+                </ul> 
+            </div>
+        </section>
+
                               <!--Elmas kısmı-->
-         
         <section id="diamond" class="selectionArea">
             <div class="container">
                 <div class="diamondBody">
@@ -478,6 +524,38 @@
         </footer>
 
 
+
+
+<script>
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 10,
+			infiniteLoop: true,
+            slideWidth:1920,
+			minSlides: 6,
+			maxSlides: 20,
+            speed:600
+            
+           
+		});
+    });
+    $(document).ready(function(){
+		$('.bxslider1').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,
+			slideMargin: 10,
+			infiniteLoop: true,
+            slideWidth:1920,
+			minSlides: 1,
+			maxSlides: 1,
+            speed:600
+            
+           
+		});
+	});
+</script>
 
     </body>
 </html>

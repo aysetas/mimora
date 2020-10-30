@@ -224,63 +224,75 @@ font-size: 12px;
    /*Slider Kısmı*/
 
 
-#mainSlider{
 
-    height: 634px;
-    background: url('../img/slider1.jpg') center center no-repeat;
-    background-size: cover;
-    border-bottom: 1px solid #2d2d2d;
-   
-    
-}
-#mainCaption{
-    height: 634px;
-   
-  
-}
 .caption{
+    position: absolute;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width:50%;
+    height: 440px;
+    flex-direction: column;
+    margin-left: 70px;
     
-    line-height: 50px;
-    padding-left: 100px;
     
 }
 .caption h5{
-    font-size: 16px;
+    font-size: 13px;
     color: #a8741a;
+ 
     
 }
 .caption h1{
-    font-size: 60px;
+   
+    font-size: 35px;
     color: #ddd;
     font-weight: 400;
     text-transform: capitalize;
-    margin-bottom:15px;
-    margin-top: 0;
     font-family: "Prata", sans-serif;
+   
    
 }
 .caption p{
-    font-size: 16px;
+    font-size: 15px;
     color: #d8d8d7;
     text-transform: capitalize;
     font-weight: 300;
     font-family: "Rubik", sans-serif;
     line-height: 24px;
     max-width: 600px;
+  
+    
    
 }
 .caption p strong{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 10px;
     line-height: 70px;
     color: #a8741a;
 }
-.slide-btn{
+.caption:hover h5{
+    animation: yazi-anim 400ms;
+}
+.caption:hover h1{
+    animation: yazi-anim 600ms;
+}
+.caption:hover p {
+    animation: yazi-anim 800ms;
+}
+@keyframes  yazi-anim{
+    0%{
+        opacity: 0;
+      transform: translateY(50px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+ 
+}
+.slider-btn{
     width: 78px;
     height: 46px;
     background: none;
@@ -297,14 +309,14 @@ font-size: 12px;
     cursor: pointer;
     margin-top: 40px;
 }
-.slide-btn a{
+a.slider-btn{
   
     text-decoration: none;
     color: #babab9;
     font-size: 16px;
     font-family: "Prata", sans-serif;
 }
-.slide-btn:hover{
+.slider-btn:hover{
     
     background-color: #a8741a;
     transition: all 0.4s ease;
@@ -664,6 +676,9 @@ transition:all.5s ease-in-out;
     
     background-color: #a8741a;
     transition: all 0.4s ease;
+}
+.watchSlider{
+    margin-top: 90px;
 }
 #diamond{
     height: 683px;
