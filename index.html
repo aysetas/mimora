@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="meta description">
+    
 
     <title>Mimora</title>
    
@@ -53,7 +54,9 @@
                                     </a>
                                 </li>
                             </ul>
-                            <p>Free shipping on all domestic orders with coupon code <span>“Watches2018”</span></p>
+                        </div>
+                        <div class="text">
+                            <p>Free shipping on all domestic orders with coupon code <span>“Watches2020”</span></p>
                         </div>
 
                       
@@ -118,13 +121,17 @@
                         <!--üçüncü başlık-->
             <div class="headerMenu">
                 <div class="container">
-                 <ul class="menuLink">
-                     <li><a href="index.html">Anasayfa</a></li>
-                     <li><a href="galeri.html">Galeri</a></li>
-                     <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                     <li><a href="iletisim.html">İletişim</a></li>
-                     
-                 </ul>
+                    <div class="menuBar">
+                        <div class="mobil"><i class="fas fa-bars">  MENU</i></div>
+                        <div class="menuLink">
+                            <ul >
+                                <li><a href="index.html">Anasayfa</a></li>
+                                <li><a href="galeri.html">Galeri</a></li>
+                                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                <li><a href="iletisim.html">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -287,32 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col5">
-                            <div class="item2">
-                                <div class="zoom">
-                                    <img src="img/watch6.jpg">
-                                </div>
-                                <div class="itemtext">
-                                    <h5>Cartier</h5>
-                                    <h1>Acer Aspire E15</h1>
-                                    <img src="img/line.png" alt="line">
-                                    <h2>550TL <span><del>700TL</del></span></h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col5">
-                            <div class="item2">
-                                <div class="zoom">
-                                   <img src="img/watch7.jpg">
-                                </div>
-                                <div class="itemtext">
-                                    <h5>Cartier</h5>
-                                    <h1>Acer Aspire E15</h1>
-                                    <img src="img/line.png" alt="line">
-                                    <h2>550TL <span><del>700TL</del></span></h2>
-                                </div>
-                            </div>
-                        </div>
+           
                         <div class="col5">
                             <div class="item2">
                                 <div class="zoom">
@@ -393,8 +375,8 @@
                         <h1>ELMAS VE MÜCEVHERLER</h1>
                     </div>
                     <div class="diamondMenu">
-                        <div class="col3">
-                            <div class="item3">
+                        <div class="col2">
+                            <div class="item2">
                                 <div class="zoom">
                                     <img src="img/elmas1.jpg" class="imageOver">
                                     <div class="diamondOverlay">
@@ -408,8 +390,8 @@
                             </div>
                         </div>
                         
-                        <div class="col3">
-                            <div class="item3">
+                        <div class="col2">
+                            <div class="item2">
                                 <div class="zoom">
                                         <img src="img/elmas3.jpg" class="imageOver">
                                         <div class="diamondOverlay2">
@@ -553,9 +535,30 @@
             speed:600
             
            
+        });
+
+       
+    });
+    $(document).ready(function(){
+         var a=0;
+        $('.mobil').click(function(){
+            if(a==0){
+                $(this).html("<i class='fas fa-times'> MENU</i>");
+                a++;
+            }
+            else{
+                $(this).html("<i class='fas fa-bars'> MENU</i>");
+                a=0;
+            }
+         
+            $(this).next('.menuLink').toggle(); 
+
 		});
-	});
+      
+    });
+    
 </script>
+
 
     </body>
 </html>

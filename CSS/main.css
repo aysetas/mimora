@@ -38,16 +38,18 @@ p {
     background-color: #242424;
 }
 .header-top{
-    padding-top:8px;
-    padding-bottom:8px;
+  
     border-bottom: 1px solid #2d2d2d;
     background-color: #242424;
-    height:30px;
+    min-height:40px;
+   
+    
         
         
 }
 .container{
     width: 90%;
+    max-width:1214,1;
     margin: auto;
     display: flex;
 }
@@ -55,40 +57,54 @@ p {
 .top-header{
     width: 90%;
     display: flex;
-    
-    
+    justify-content: space-between;
+    min-height:40px;
+  
+}
+
+.top-header .social-contact{
+    width:242.8px;
+    display: flex;
+    justify-content: space-around;
+    height:40px;
+
     
 }
-.top-header .social-contact{
-    display: flex;
-   
-    
+.top-header .social-contact .social__item{
+    align-items: center;
+    width:36.4px;
+    height:40px;
 }
 .top-header .social-contact ul{
+    width:242.8px;
+    max-height:40px;
     display: flex;
+    justify-content: space-around;
+   
+   
    
 }
 .top-header .social-contact ul li{
     display: flex;
+    justify-content: center;
+    width:25%;
+    align-items: center;
+  
     
    
 }
-.top-header .social-contact .social__item{
-    
-    align-items: center;
-    margin:2px;
-}
+
 
 .top-header .social-contact ul li a{
-    padding: 7px 7px;
+    padding: 25% 25%;
     text-decoration: none;
     color: #afafaf;
     background-color: #2f2f2f;
     margin-bottom: 0px;
-    font-size: 15px;
+    font-size: 12px;
     border: 2px solid #2d2d2d;
     border-radius:50%;
-    width: 12px;
+    width:12px;
     height:12px;
     text-align: center;
     line-height: 12px;
@@ -100,38 +116,60 @@ p {
     color: #ffffff;
     transition: all 1s ease;
 }
-.top-header .social-contact{
-    width: 780px;
+
+.top-header .text{
+    width:55%;
+    height: 40px;
 }
-.top-header .social-contact p{
+.top-header .text p{
+    display: flex;
+    justify-content: center;
+    height: 40px;
     font-size:12px;
-    margin-bottom: 0px;
     color: #ffffff;
-    padding-left: 10px;
-    line-height: 30px;
+    line-height: 40px;
+    width:100%;  
+ 
+   
     
 }
-.top-header .social-contact p span{
+.top-header .text p span{
     color:#a8741a;
+    font-size:12px;
 }
 
 .header-top-nav{
-display: flex;
-justify-content: center;
-color: #ffffff;
-width: 390px;
-padding: 5px;
-font-size: 12px;
-
-
+    display: flex;
+    color: #ffffff;
+    width: 25%;
+    font-size: 12px;
+ 
 
 }
 .header-top-nav .header-top-nav__item{
-    padding: 0 32px;
+
+    width: 100%;
+    height: 100%;
     border-left: 1px solid #2d2d2d;
-    color: #ffffff;
+    color: #afafaf;
     cursor: pointer;
+    
+
  
+}
+.header-top-nav .header-top-nav__item .dropdown{
+    width: 100%;
+    height: 100%;
+
+}
+.header-top-nav .header-top-nav__item .dropdown a{
+   width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
 }
 .header-top-nav .header-top-nav__item .dropdown a:hover{
     color: #a8741a;
@@ -140,31 +178,32 @@ font-size: 12px;
 
 }
 .header-middle{
-    padding: 48px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 160px;
     border-bottom: 1px solid #2d2d2d;
     background-color: #242424;
     font-family: "Rubik", sans-serif;
-    font-size: 1.5rem;
-}
-.header-middle .container{
-    height: 57px;
+    
 }
 .header-middle .row{
     display: flex;
-    width: 1349px;
-    height: 57px;
+    width:100%;
+    max-height: 57px;
     padding-left: 10px;
 }
 .header-middle .row .contact-info{
     display: flex;
-    width: 487.5px;
-    height: 37px;
-      
+    align-items: center;
+    width:40.5%;
+    max-height: 57px;
+   
 
 }
 .header-middle .row .contact-info img{
     width: 32px;
-    height: 32px;
+    height:32px;
 
 
 }
@@ -175,8 +214,13 @@ font-size: 12px;
     line-height: 1;
     color:#a8741a;
 }
+.header-middle .row .text-center img{
+    width: 181px;
+    height:57px;
+}
 .headerMenu{
-    height: 65px;
+    width: 100%;
+    min-height: 65px;
     border-bottom: 1px solid #2d2d2d;
     background-color:#242424 ;
     position: -webkit-sticky; /* Safari */
@@ -185,38 +229,52 @@ font-size: 12px;
 
 
 }
+
+.headerMenu .menuBar{
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    flex-direction: column;
+}
 .headerMenu .menuLink{
-     width: 100%;
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 65px;
     
-    
-}
 
+}
 .headerMenu .menuLink ul{
-    width: 1170px;
-    height: 65px;
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65px;
+    
+    
 }
 
-.headerMenu .menuLink li{
-   display: flex;
-  
+.headerMenu .menuLink ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    height: 100%;
+   
 }
-.headerMenu  .menuLink li a{
+.headerMenu .menuLink ul li a{
+    font-size: 18px;
     text-decoration: none;
     color: #fff;
-    padding: 20px 22px; 
-    font-size: 18px;
-    line-height: 25px;
     text-transform: capitalize;
     font-weight: 400;
     display: block;
     font-family: "Prata", sans-serif;
   
 }
-.headerMenu  .menuLink li a:hover{
+.headerMenu .menuLink ul li a:hover{
     color: #a8741a;
     transition: all 1s ease;
 }
@@ -226,15 +284,16 @@ font-size: 12px;
 
 
 .caption{
+    margin-left: 70px;
+    margin-top:70px;
     position: absolute;
     display: flex;
-    justify-content: center;
     width:50%;
-    height: 440px;
+    justify-content: space-around;
+    max-height: 440px;
     flex-direction: column;
-    margin-left: 70px;
-    
-    
+   
+ 
 }
 .caption h5{
     font-size: 13px;
@@ -294,7 +353,7 @@ font-size: 12px;
 }
 .slider-btn{
     width: 78px;
-    height: 46px;
+    max-height: 46px;
     background: none;
     font-size: 13px;
     color: #e8e8e7;
@@ -326,14 +385,14 @@ a.slider-btn{
   /*mainWatches kısmı */
 
 #mainWatches{
-    height: 305px;
+    min-height: 305px;
     margin: 50px 0px;
     position: relative;
     
 }
 
 #mainWatches .mainBody{
-    height: 305px;
+    min-height: 305px;
     width: 100%;
     position: relative;   
     display: flex;
@@ -343,23 +402,21 @@ a.slider-btn{
    
 }
 #mainWatches  .col3{
+    flex-grow: 1;
+    width: 33.333333%;
+    padding:20px ;
 
-    max-width: 33.333333%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-   
+    
+
     
 }
 
-
 #mainWatches  .col3 .item{
-    
-    position: relative;
+    width: 100%;
     height: 246px;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    
+    display: flex;
+ 
   
 
 }
@@ -368,20 +425,32 @@ a.slider-btn{
  
 }
 #mainWatches  .col3 .item .promo__box{
+    width: 100%;
     position: relative;
-    height: 240px;
+    height: 246px;
     display: inline-block;
     overflow: hidden;
 }
 #mainWatches  .col3 .item .promo__box img{
-    width:370px ;
-    height: 240px;
+    width:100% ;
+    height: 246px;
     position: relative;
     border-radius: 5px;
+   
 }
 #mainWatches  .col3 .item .promo__box img:hover{
+    transform: scale(1.02); 
 transform: scale(1.02); 
-transition:all.5s ease-in-out;
+    transform: scale(1.02); 
+transform: scale(1.02); 
+    transform: scale(1.02); 
+transform: scale(1.02); 
+    transform: scale(1.02); 
+transform: scale(1.02); 
+    transform: scale(1.02); 
+transform: scale(1.02); 
+    transform: scale(1.02); 
+    transition:all.5s ease-in-out;
 
 }
 #mainWatches  .col3 .item .promo__content{
@@ -391,18 +460,15 @@ transition:all.5s ease-in-out;
     bottom: 24px;
     transform: translateY(0);
     position: absolute;
-    width: 250px;
-    height: 88px;
+    width:100%;
+    max-height: 88px;
 
-    
 }
 
 #mainWatches  .col3 .item .promo__content span{
     display: block;
     transition: all 0.5s ease-in-out;
-    
-    
-    
+ 
 }
 #mainWatches  .col3 .item .promo__content .promo__label{
     font-size: 15px;
@@ -411,6 +477,17 @@ transition:all.5s ease-in-out;
     font-weight: 300;
     font-family: "Rubik", sans-serif;
 }
+#mainWatches  .col3 .item .promo__content .promo__name{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:#a8741a;
+    font-family: "Prata", sans-serif;
+}
+#mainWatches  .col3 .item .promo__content .promo__price{
+    font-size: 15px;
+    color:#fff;
+}
+
 
 .promo__content:hover .promo__label{
     animation: yazi-anim 400ms;
@@ -433,22 +510,12 @@ transition:all.5s ease-in-out;
     }
  
 }
-#mainWatches  .col3 .item .promo__content .promo__name{
-    font-size: 24px;
-    margin-bottom: 10px;
-    color:#a8741a;
-    font-family: "Prata", sans-serif;
-}
-#mainWatches  .col3 .item .promo__content .promo__price{
-    font-size: 15px;
-    color:#fff;
-}
 
        /* GALERİ KISMI*/
 
 
 #galeri{
-    height: 885px;
+    min-height: 885px;
     position: relative;
     margin: 50px 0px;
     border-top: 1px solid #2d2d2d;
@@ -456,7 +523,7 @@ transition:all.5s ease-in-out;
 
 #galeri .container .galeriBody{
 
-    height: 885px;
+    min-height: 885px;
     width: 100%;
     position: relative;
     
@@ -466,11 +533,8 @@ transition:all.5s ease-in-out;
     height: 100px;
     position: relative;
     display: flex;
-   align-items: center;
-   margin-top: 50px;
-   
-    
-  
+    align-items: center;
+ 
 }
 #galeri .container .galeriBody .galeriText h1{
     font-family: "Prata", sans-serif;
@@ -494,18 +558,18 @@ transition:all.5s ease-in-out;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    height: 716px;
-    justify-content: center;
+    min-height: 716px;
+    justify-content: space-around;
     align-items: center;
+ 
 
 
 }
 #galeri .galeriBody .galeriMenu .col5{
-    width:200px;
-    height: 320px;
+    width:25%;
+    min-height: 320px;
     position: relative;
     text-align: left;
-    padding: 15px;
     transition: all 0.4s ease-out 0s;
     display: flex;
     
@@ -514,8 +578,8 @@ transition:all.5s ease-in-out;
 }
 #galeri .galeriBody .galeriMenu .col5 .item2{
     position: relative;
-    width:200px;
-    height: 320px;
+    width:90%;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
    
@@ -524,15 +588,15 @@ transition:all.5s ease-in-out;
 
 #galeri .galeriBody .galeriMenu .col5 .item2 .zoom{
     position: relative;
-    width:180px;
-    height: 180px;
-    padding:20px 12px 12px;
+    width:100%;
+    min-height: 180px;
+   
 }
 
 #galeri .galeriBody .galeriMenu .col5 .item2 .zoom img{
     position: relative;
-    width:180px;
-    height: 180px;
+    width:100%;
+    min-height: 180px;
    
 }
 #galeri .galeriBody .galeriMenu .col5 .item2 .zoom img:hover{
@@ -540,9 +604,8 @@ transition:all.5s ease-in-out;
     transition: all 0.4s ease;
 }
 #galeri .galeriBody .galeriMenu .col5 .item2 .itemtext{
-    width: 200px;
-    height: 80px;
-   
+    width: 100%;
+    min-height: 80px;
     text-align: center;
 }
 #galeri .galeriBody .galeriMenu .col5 .item2 .itemtext h5{
@@ -579,13 +642,15 @@ transition:all.5s ease-in-out;
 
            /*Parallax Kısmı*/
 #parallax{
-    height:226px;
+    max-height:226px;
+    width: 100%;
     background: url('../img/parallax.jpg') no-repeat scroll center/cover;
     padding: 80px 0;
     
 }
 #parallax .parallaxTop{
-    height: 226px;
+   width: 100%;
+   max-height: 226px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -594,7 +659,7 @@ transition:all.5s ease-in-out;
 #parallax .parallaxTop h5{
     text-align: center;
     width: 100%;
-    height:19px;
+    max-height:19px;
     line-height: 16px;
     font-weight: 300;
     font-size: 16px;
@@ -607,7 +672,7 @@ transition:all.5s ease-in-out;
 #parallax .parallaxTop h1{
     text-align: center;
     width: 100%;
-    height: 52px;
+    max-height: 52px;
     line-height: 52px;
     font-weight: 400;
     font-size: 48px;
@@ -649,11 +714,11 @@ transition:all.5s ease-in-out;
     }
  
 }
-#parallax .parallaxTop .btn{
+#parallax .parallaxTop a.btn{
     width: 78px;
     height: 46px;
     background: none;
-    font-size: 13px;
+    font-size: 16px;
     color: #e8e8e7;
     line-height: 46px;
     text-transform: uppercase;
@@ -672,7 +737,8 @@ transition:all.5s ease-in-out;
     font-size: 16px;
     font-family: "Prata", sans-serif;
 }
-#parallax .parallaxTop .btn:hover{
+
+#parallax .parallaxTop a.btn:hover{
     
     background-color: #a8741a;
     transition: all 0.4s ease;
@@ -681,19 +747,20 @@ transition:all.5s ease-in-out;
     margin-top: 90px;
 }
 #diamond{
-    height: 683px;
+    width: 100%;
+    min-height: 683px;
     padding: 50px 0;
     position: relative;
-    
-
-    
+  
 }
 #diamond .diamondBody{
-    height: 683px;
+    width: 100%;
+    min-height: 683px;
     position: relative;
    
 }
 #diamond .diamondBody .itemText {
+    width: 100%;
     height: 100px;
     position: relative;
     display: flex;
@@ -713,30 +780,31 @@ transition:all.5s ease-in-out;
 #diamond .diamondBody .itemText::before{
     position: absolute;
     content: " ";
-    width: 73%;
+    width: 76%;
     height: 2px;
     background: #2d2d2d;
-    left: 300px;
+    left: 290px;
     right: 0;
     top: 50%;
     overflow: hidden;
-   
+    
 }
 #diamond .diamondBody .diamondMenu{
-    height: 583px;
+    width: 100%;
+    min-height: 583px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: stretch;
 }
-#diamond .diamondBody .diamondMenu .col3{
+#diamond .diamondBody .diamondMenu .col2{
     flex-grow: 1;
     width: 50%;
     padding:20px ;
 
 }
-#diamond .diamondBody .diamondMenu .col3 .item3{
+#diamond .diamondBody .diamondMenu .col2 .item2{
     width: 100%;
     position: relative;
     display: flex;
@@ -745,17 +813,17 @@ transition:all.5s ease-in-out;
     align-items: center;
     height:543px;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom{
     width: 100%;
     position: relative;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .imageOver{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom .imageOver{
     position: relative;
     display: block;
     width: 100%;
     height: auto;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .diamondOverlay{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom .diamondOverlay{
     position:absolute;
     top: 0;
     left: 0;
@@ -766,10 +834,10 @@ transition:all.5s ease-in-out;
     transition: .5s ease;
     width: 0;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom:hover .diamondOverlay{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom:hover .diamondOverlay{
     width: 100%;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom .diamondOverlay2{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom .diamondOverlay2{
     position:absolute;
     top: 0;
     right: 0;
@@ -780,7 +848,7 @@ transition:all.5s ease-in-out;
     transition: .5s ease;
     width: 0;
 }
-#diamond .diamondBody .diamondMenu .col3 .item3 .zoom:hover .diamondOverlay2{
+#diamond .diamondBody .diamondMenu .col2 .item2 .zoom:hover .diamondOverlay2{
     width: 100%;
 }
 .diamondText{
@@ -797,10 +865,10 @@ transition:all.5s ease-in-out;
 
 
 }
-.item3  .itemtext3{
+.item2  .itemtext3{
      height: 190px;
 }
-.item3  .itemtext3 h1{
+.item2  .itemtext3 h1{
     text-align: center;
     font-size: 25px;
     font-family: "Prata", sans-serif;
@@ -808,41 +876,45 @@ transition:all.5s ease-in-out;
     color: #a8741a;
     
 }
-.item3  .itemtext3 p{
+.item2  .itemtext3 p{
     padding: 0 10px;
 }
+
+   /*footer Kısmı*/
+
 .footerArea{
     position: relative;
-    height: 400px;
+    min-height: 400px;
     padding: 40px 0;
     border-top: 1px solid #2d2d2d;
     
 }
 .footerBody{
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
    
     
 }
 .footerBody .footerTop{
+    width: 100%;
     position: relative;
-    height:300px;
+    min-height:300px;
     display: flex;
     justify-content: center;
     
 }
 .footerBody .col4{
-    max-width: 25%;
+    width: 25%;
     position: relative;
-    width: 100%;
     height:260px;
     padding: 20px;
     flex-grow: 1;
    
 }
 .footerItem{
+    width: 100%;
     position: relative;
     height:260px;
    
@@ -1022,10 +1094,12 @@ transition:all.5s ease-in-out;
 
 
 .page{
+    width: 100%;
     height: 63px;
     padding:60px 0;
 }
 .page .pageTitle{
+    width: 100%;
     height: 63px;
     display: flex;
     justify-content: center;
@@ -1038,26 +1112,30 @@ transition:all.5s ease-in-out;
 
 }
 .imgProduct{
-    height: 600px;
-    position: relative;
+    width: 100%;
+    min-height: 600px;
+    
  
 }
 .imgProduct .imgBody{
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 .imgProduct .imgBody .imgMenu{
+    width: 100%;
+    min-height: 600px;
     display: flex;
     position: relative;
 }
 .imgProduct .imgBody .imgMenu .col2{
     width: 50%;
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 .imgProduct .imgBody .imgMenu .col2 .item{
-    height: 600px;
+    width: 100%;
+    min-height: 600px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -1067,13 +1145,13 @@ transition:all.5s ease-in-out;
 }
 .imgProduct .imgBody .imgMenu .col2 .item .imgPage{
     position: relative;
-    height: 275px;
-    width: 275px;
+    height:275px;
+    width: 50%;
     
 }
 .imgProduct .imgBody .imgMenu .col2 .item .imgPage img{
     height: 273px;
-    width: 273px;
+    width: 90%;
 }
 .imgProduct .imgBody .imgMenu .col2 .item .imgPage img:hover{
     transform: scale(1.04);
@@ -1083,13 +1161,13 @@ transition:all.5s ease-in-out;
 
 .imgProduct .imgBody .imgMenu .col2 .item .text{
     width: 100%;
-    height: 280px;
+    min-height: 280px;
     display: flex;
 
 }
 .imgProduct .imgBody .imgMenu .col2 .item .text .itemtext{
     width:100%;
-    height: 280px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
@@ -1155,14 +1233,14 @@ transition:all.5s ease-in-out;
 /* Hakkında sayfası*/
 
 .About{
-    height: 445px;
+    min-height: 445px;
     width: 100%;
     position: relative;
     background-color: #2e2e2e;;
 
 }
 .aboutMenu{
-    height: 445px;
+    min-height: 445px;
     width: 100%;
     display: flex;
 
@@ -1190,6 +1268,7 @@ transition:all.5s ease-in-out;
     
 }
 .aboutMenu .itemtext p{
+    font-size: 16px;
     padding: 40px 40px;
 }
 .aboutMenu .itemtext .btn{ 
@@ -1223,12 +1302,12 @@ transition:all.5s ease-in-out;
 }
 /* İletişim sayfası*/
 .contact{
-    width:1349px;
+    width:100%;
     height: 900px;
     position: relative;
 }
 .contactMenu{
-    width:1349px;
+    width:100%;
     height: 900px;
     position: relative;
     display:flex;
@@ -1267,45 +1346,42 @@ transition:all.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding-top: 50px;
+   
+}
+.contact-form label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 285px;
+   
+    
 }
 
 .text-form{
-    width: 50px;
-    height: 20px;
+    width:7%;
+    min-height: 20px;
     padding-right: 10px;
+    
+    
    
    
 }
 
 .contact-form input{
-    width: 1000px;
+    width: 100%;
     height: 40px;
     margin: 10px 0;
     background-color: #333333;
     color: #afafaf;
     border: 1px solid #333333;
     border-radius: 3px;
-    
-}
-.mesaj{
-    width: 1072px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    
-}
-.contact-form textarea{
-    width: 1000px;
-    height: 40px;
-    background-color: #333333;
-    color: #afafaf;
-    border: 1px solid #333333;
-    border-radius: 3px;
    
+    
 }
+
 
 .contact-form .button{
     margin-top: 18px;
@@ -1314,7 +1390,6 @@ transition:all.5s ease-in-out;
     line-height: 45px;
     text-align:center;
     background-color: #333333;
-    float: right;
     border-radius: 3px;
 
 }
@@ -1326,4 +1401,230 @@ transition:all.5s ease-in-out;
 .contact-form .button:hover{
     transition: all .4s ease;
     background-color: #a8741a;
+}
+.headerMenu  .mobil {
+    color: #fff;
+    display: none;
+
+}
+
+@media only screen and (min-width:1094px){
+    .headerMenu .menuLink {display: block!important;}
+}
+
+
+/* responsive kısmı Tablet için*/
+@media only screen and (min-width:781px) and (max-width:1094px){
+    .headerMenu .menuLink { display: none; margin-top: 5px; }
+    .headerMenu .menuLink ul{width: 100%;  flex-direction: column; background-color: #333333;}
+    .headerMenu .menuLink ul li{ width: 100%; padding:0;text-align: center; display: block; }
+    .headerMenu .menuLink ul li a{  font-family: "Rubik", sans-serif; padding:10px 0; border-right: none; border: 1px solid rgb(45, 45, 45);}
+    .headerMenu .menuLink ul li a:hover{background-color: #555;}
+    .headerMenu .mobil{display: block;}
+    .headerMenu .mobil i{ 
+        max-height: 20px;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 2px;
+        flex-direction: column;
+    }
+     /*header kısmı*/
+     .top-header{flex-wrap: wrap;}
+     .top-header .social-contact{width: 100%; }
+     .header-top-nav{width: 100%;} /*dil yazısı kısmı*/
+     .top-header .text{width: 100%;}/*yazı kısmı*/
+     .top-header .text p{ font-size: 13px;}
+ 
+
+
+    /*slider kısmı*/
+   
+    .caption h5{font-size: 8px; height:8px;}
+    .caption h1{font-size: 35px; height:50px;}
+    .caption p{font-size: 12px; height:15px; padding-bottom: 5px;}
+    .caption p strong{font-size: 16px; }
+    a.slider-btn{ font-size: 10px; padding: 0 30px; }
+    a.slider-btn{width:60px; height: 30px; line-height: 30px;}
+
+
+      /*mainwatch*/
+    #mainWatches  .col3 .item .promo__content .promo__label{font-size: 12px;}
+    #mainWatches  .col3 .item .promo__content .promo__name{font-size: 17px;}
+    #mainWatches  .col3 .item .promo__content .promo__price{font-size: 10px;}
+
+       /*footer*/
+    .footerBody .footerTop{flex-wrap: wrap;}
+    .footerBody .col4{width:40%;}
+     /*hakkında sayfası için*/
+    .aboutMenu .itemtext p{font-size:12px;}
+    .aboutMenu .itemtext{padding-top: 20px;}
+}
+
+
+
+
+/* responsive kısmı Tablet için*/
+@media only screen and (min-width:481px) and (max-width:780px){
+    .headerMenu .menuLink { display: none;}
+    .headerMenu .menuLink ul{width: 100%;  flex-direction: column; background-color: #333333}
+    .headerMenu .menuLink ul li{ width: 100%; padding:0;text-align: center; display: block; }
+    .headerMenu .menuLink ul li a{  font-family: "Rubik", sans-serif; padding:10px 0; border-right: none; border: 1px solid rgb(45, 45, 45);}
+    .headerMenu .mobil{display: block;}
+    .headerMenu .mobil i{ 
+        max-height: 20px;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 2px;
+    }
+    
+     /*header kısmı*/
+     .top-header{flex-wrap: wrap;}
+     .top-header .social-contact{width: 100%; }
+     .header-top-nav{width: 100%;} /*dil yazısı kısmı*/
+     .top-header .text{width: 100%;}/*yazı kısmı*/
+     .top-header .text p{ font-size: 10px;}
+     .header-middle .row{flex-wrap: wrap;}
+     .header-middle  .row .contact-info{width: 100%; justify-content: center;} /*iletişim yazısı*/
+     .header-middle .row .text-center{ width: 100%; text-align:center; margin-top: 10px;}/*logo resmi*/
+ 
+     /*.headerMenu  .menuLink li a{font-size: 9px;}*/
+
+    /*slider kısmı*/
+    .caption{ width: 80%; margin-top:20px; margin-left:40px; height: 80%;}
+    .caption h5{font-size: 6.5px; height:6.5px;}
+    .caption h1{font-size: 17.5px; height: 17.5px;}
+    .caption p{font-size: 5px; height:5px; padding-bottom: 5px;}
+    .caption p strong{font-size: 12.5px;}
+    a.slider-btn{ font-size: 6px; padding: 0 15px;}
+    a.slider-btn{width:30px; height: 20px; line-height: 20px;}
+    
+  /*mainwatch*/
+    #mainWatches .mainBody{flex-wrap: wrap;}
+    #mainWatches .mainBody .col3{width: 100%;}
+
+  
+
+    /*galeri*/
+    #galeri .container .galeriBody .galeriText h1{ font-size: 18px;}
+    #galeri .galeriBody .galeriMenu{flex-wrap: wrap;}
+    #galeri .galeriBody .galeriMenu .col5{width: 50%;}
+    #galeri .galeriBody .galeriMenu .col5 .item2{width:90%;}
+    #galeri .galeriBody .galeriMenu .col5 .item2 .zoom{width:90%;}
+    #galeri .galeriBody .galeriMenu .col5 .item2 .zoom img{width:90%;}
+    #galeri .galeriBody .galeriMenu .col5 .item2 .itemtext{width: 80%;}
+
+    /*parallax*/
+    #parallax{width: 100%; }
+    #parallax .parallaxTop h5{font-size: 8px;}
+    #parallax .parallaxTop h1{font-size: 24px;}
+    #parallax .parallaxTop p{font-size: 7.5px;}
+    #parallax .parallaxTop a.btn{width: 39px; height: 23px; font-size: 8px; line-height: 23px;}
+    #diamond .diamondBody .itemText h1{font-size: 17px;}
+    #diamond .diamondBody .diamondMenu{flex-wrap: wrap;}
+    #diamond .diamondBody .diamondMenu .col2{width: 100%;}  
+    
+    /*footer*/
+    .footerBody .footerTop{flex-wrap: wrap;}
+    .footerBody .col4{width:100%;}
+     /*galeri sayfası*/
+    .imgProduct .imgBody .imgMenu{flex-wrap: wrap;}
+    .imgProduct .imgBody .imgMenu .col2 .item .imgPage{width:100%;}
+    .imgProduct .imgBody .imgMenu .col2 .item .text .itemtext{margin-bottom: 100px;}
+    /*hakkında sayfası */
+    .aboutMenu{flex-wrap: wrap;}
+    .aboutMenu .col2{width: 100%;}
+    .aboutMenu .itemtext{padding-top: 20px; }
+    /*iletişim sayfası*/
+    .text-form{font-size: 10px;}
+
+       
+}
+
+/* responsive kısmı Cep Telefonu için*/
+@media only screen and (min-width:320px) and (max-width:480px){
+    .headerMenu .menuLink { display: none;}
+    .headerMenu .menuLink ul{width: 100%;  flex-direction: column; background-color: #333333}
+    .headerMenu .menuLink ul li{ width: 100%; padding:0;text-align: center; display: block; }
+    .headerMenu .menuLink ul li a{  font-family: "Rubik", sans-serif; padding:10px 0; border-right: none; border: 1px solid rgb(45, 45, 45);}
+    .headerMenu .mobil{display: block;}
+    .headerMenu .mobil i{ 
+        max-height: 20px;
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 18px;
+        margin-top: 20px;
+        padding: 2px;
+    }
+    /*header kısmı*/
+    .top-header{flex-wrap: wrap;}
+    .top-header .social-contact{width: 100%; }
+    .header-top-nav{width: 100%;} /*dil yazısı kısmı*/
+    .top-header .text{width: 100%; }/*yazı kısmı*/
+    .top-header .text p{font-size:8px; }
+    .header-middle .row{flex-wrap: wrap;}
+    .header-middle  .row .contact-info{width: 100%; justify-content: center;} /*iletişim yazısı*/
+    
+    .header-middle .row .text-center{ width: 100%; text-align:center; margin-top: 10px;}/*logo resmi*/
+
+    /*.headerMenu  .menuLink li a{font-size: 9px;}*/
+
+    /*slider kısmı*/
+    .caption{ width: 80%; margin-top:20px; margin-left:40px; height: 80%;}
+    .caption h5{font-size: 6.5px; height:6.5px;}
+    .caption h1{font-size: 17.5px; height: 17.5px;}
+    .caption p{font-size: 5px; height:5px; padding-bottom: 5px;}
+    .caption p strong{font-size: 12.5px;}
+    a.slider-btn{ font-size: 6px; padding: 0 15px;}
+    a.slider-btn{width:30px; height: 20px; line-height: 20px;}
+    
+  /*mainwatch*/
+    #mainWatches .mainBody{flex-wrap: wrap;}
+    #mainWatches .mainBody .col3{width: 100%;}
+
+  
+
+    /*galeri*/
+    #galeri .container .galeriBody .galeriText h1{ font-size: 18px;}
+    #galeri .galeriBody .galeriMenu{flex-wrap: wrap;}
+    #galeri .galeriBody .galeriMenu .col5{width: 100%; margin-bottom: 20px;}
+    
+
+    
+
+    /*parallax*/
+    #parallax{width: 100%; }
+    #parallax .parallaxTop h5{font-size: 8px;}
+    #parallax .parallaxTop h1{font-size: 24px;}
+    #parallax .parallaxTop p{font-size: 7.5px;}
+    #parallax .parallaxTop a.btn{width: 39px; height: 23px; font-size: 8px; line-height: 23px;}
+    #diamond .diamondBody .itemText h1{font-size: 17px;}
+    #diamond .diamondBody .diamondMenu{flex-wrap: wrap;}
+    #diamond .diamondBody .diamondMenu .col2{width: 100%;}  
+    /*footer*/
+    .footerBody .footerTop{flex-wrap: wrap;}
+    .footerBody .col4{width:100%;}
+
+
+    /*galeri sayfası*/
+    .page .pageTitle h1{font-size: 30px;}
+    .imgProduct .imgBody .imgMenu{flex-wrap: wrap;}
+    .imgProduct .imgBody .imgMenu .col2 .item .imgPage{width:100%;}
+    .imgProduct .imgBody .imgMenu .col2 .item .text .itemtext{margin-bottom: 100px;}
+    /*hakkında sayfası*/
+    .aboutMenu{flex-wrap: wrap;}
+    .aboutMenu .col2{width: 100%;}
+    .aboutMenu .itemtext{padding-top: 20px;}
+    .aboutMenu .itemtext p{font-size: 12px;}
+
+    /*iletişim*/
+    .text-form{font-size: 10px;}
+
+       
 }
