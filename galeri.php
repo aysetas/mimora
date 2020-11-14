@@ -1,6 +1,14 @@
 <?php
 include("header.php");
+
 ?>
+
+        <section class="page">
+            <div class="pageTitle">
+                <h1><?php echo __d('Galeri');?></h1>
+            </div>
+    
+        </section>
         <section class="imgProduct">
             <div class="container">
                 <div class="imgBody">
@@ -17,7 +25,7 @@ include("header.php");
                             
                             ?>
                                 <div class="imgPage">
-                                    <img src="<?php echo $galericek['galeri_resim'];?>">
+                                    <img src="nedmin/<?php echo $galericek['galeri_resim'];?>">
                                 </div>
                               
                                 <?php } ?>
@@ -45,7 +53,7 @@ include("header.php");
                                             <li>Availability: In Stock</li>
                                         </ul>
                                         <h2><?php echo $galericek['galeri_indirim'];?>TL <span><del><?php echo $galericek['galeri_fiyat'];?>TL</del></span></h2>
-                                        <a href="#" class="btn">SATIN AL </a> 
+                                        <a href="#" class="btn"><?php echo __d('satınAl');?></a> 
                                     </div>
                                 </div>
                                 <?php } ?>
@@ -63,7 +71,7 @@ include("header.php");
             <div class="container">
                 <div class="galeriBody">
                         <div class="galeriText">
-                            <h1 style="font-size: 19px;">DİĞERLERİ</h1>
+                            <h1 style="font-size: 19px;"><?php echo __d('digerleri');?></h1>
                         </div>
                     <div class="galeriMenu">
 
@@ -79,7 +87,7 @@ include("header.php");
                         <div class="col5">
                             <div class="item2">
                                 <div class="zoom">
-                                    <img src="<?php echo $galericek['galeri_resim']; ?>">
+                                    <img src="nedmin/<?php echo $galericek['galeri_resim'];?>">
                                 </div>
                                 <div class="itemtext">
                                     <h5><?php echo $galericek['galeri_ad']; ?></h5>

@@ -1,4 +1,10 @@
 <?php
+ob_start();
+if(!isset($_SESSION))
+{
+session_start();
+}
+
 $host="localhost";
 $db_name="mimora";
 $kullanici_adi="root";

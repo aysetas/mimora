@@ -1,6 +1,9 @@
 <?php
 include ("header.php");
 include ("slider.php");
+
+
+
 ?>
        
                    <!--Kategori kısmı--> 
@@ -21,7 +24,7 @@ include ("slider.php");
                     <div class="col3">
                         <div class="item">
                             <a href="#" class="promo__box">
-                               <img src="<?php echo $kategoricek['kategori_resimyol'];?>">
+                               <img src="nedmin/<?php echo $kategoricek['kategori_resimyol'];?>">
                                 <span class="promo__content">
                                   <span class="promo__label"><?php echo $kategoricek['kategori_baslik'];?></span>
                                   <span class="promo__name"><?php echo $kategoricek['kategori_ad'];?></span>
@@ -42,7 +45,7 @@ include ("slider.php");
             <div class="container">
                 <div class="galeriBody">
                         <div class="galeriText">
-                            <h1>GALERİ</h1>
+                            <h1><?php echo __d('Galeri');?></h1>
                         </div>
                     <div class="galeriMenu">
                   
@@ -58,7 +61,7 @@ include ("slider.php");
                         <div class="col5">
                             <div class="item2">
                                 <div class="zoom">
-                                    <img src="<?php echo $galericek['galeri_resim']; ?>">
+                                    <img src="nedmin/<?php echo $galericek['galeri_resim']; ?>">
                                 </div>
                                 <div class="itemtext">
                                     <h5><?php echo $galericek['galeri_ad']; ?></h5>
@@ -88,7 +91,7 @@ include ("slider.php");
                 <h5><?php echo $parallaxcek['parallax_baslik1'];?></h5>
                 <h1><?php echo $parallaxcek['parallax_baslik2'];?> </h1>
                 <p> <?php echo $parallaxcek['parallax_icerik'];?></p>
-                <a href="#" class="btn">SATIN AL </a> 
+                <a href="#" class="btn"><?php echo __d('satınAl');?></a> 
             </div>
 
         </section>
@@ -106,7 +109,7 @@ include ("slider.php");
                                 
                 ?>
                 
-                    <li><img src="<?php echo $galericek['galeri_resim'];?>" /></li>
+                    <li><img src="nedmin/<?php echo $galericek['galeri_resim'];?>" /></li>
                     
                     <?php
                      }
@@ -120,7 +123,7 @@ include ("slider.php");
             <div class="container">
                 <div class="diamondBody">
                     <div class="itemText">
-                        <h1>ELMAS VE MÜCEVHERLER</h1>
+                        <h1><?php echo __d('elmasvemucevher');?></h1>
                     </div>
                     <div class="diamondMenu">
 

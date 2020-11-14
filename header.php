@@ -1,4 +1,14 @@
-<?php include ("nedmin/netting/baglan.php");?>
+<?php 
+include ("nedmin/netting/baglan.php");
+include('translate.php');
+
+if(!isset($_SESSION))
+{
+session_start();
+}
+
+
+?>
 
 <!DOCTYPE html>
     <meta charset="utf-8"> 
@@ -66,45 +76,26 @@
                             </ul>
                         </div>
                         <div class="text">
-                            <p><?php echo $ayarcek['ayar_text'];?> <span>“<?php echo $ayarcek['ayar_text2'];?>”</span></p>
+                            <p><?php echo __d($ayarcek['ayar_text']);?><span>“<?php echo __d($ayarcek['ayar_text2']);?>”</span></p>
                         </div>
 
                       
                             <div class="header-top-nav">
                                 <div class="language-selector header-top-nav__item">
-                                    <div class="dropdown header-top__dropdown">
-                                        <a class="dropdown-toggle" id="languageID" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            EN-GB
-                                            <i class="fa fa-angle-down"></i>
+                                    <div class="dropdown ">
+                                        <a href="dil.php?dil=tr">
+                                            <?php echo __d('trdil');?>
                                         </a>
-                                        <div class="dropdown-menu" aria-labelledby="languageID">
-                                            
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="currency-selector header-top-nav__item">
-                                    <div class="dropdown header-top__dropdown">
-                                        
-                                        <a class="dropdown-toggle" id="currencyID" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            USD
-                                            <i class="fa fa-angle-down"></i>
+                                    <div class="dropdown ">
+                                        <a href="dil.php?dil=en">
+                                        <?php echo __d('endil');?>
                                         </a>
-                                        <div class="dropdown-menu" aria-labelledby="currencyID">
-                                           
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="user-info header-top-nav__item">
-                                    <div class="dropdown header-top__dropdown">
-                                        <a class="dropdown-toggle" id="userID" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                           Hesabım
-                                            <i class="fa fa-angle-down"></i>
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="userID">
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                        
                     </div>
@@ -117,7 +108,7 @@
                     <div class="row">
                        <div class="contact-info">
                          <img src="img/icon_phone.png" alt="Phone Icon">
-                         <p>Call us <br> Free Support:<?php echo $ayarcek['ayar_tel'];?></p>
+                            <p><?php echo __d('BiziArayın');?><br><?php echo __d('ÜcretsizDestek');?>:<?php echo $ayarcek['ayar_tel'];?></p>
                        </div>
 
                         <div class="text-center">
@@ -134,8 +125,10 @@
                     <div class="menuBar">
                         <div class="mobil"><i class="fas fa-bars">  MENU</i></div>
                         <div class="menuLink">
-               
+
+
                             <ul >
+
                                 <?php                
                                     $menu_id=@$_GET['menu_id'];
                                     $menusorgu = $db -> prepare("select * from menuler order by menu_id='$menu_id' ASC");
@@ -144,10 +137,12 @@
                                     foreach($menuliste as $menucek){
                                     
                                 ?>
-                                <li><a href="<?php echo $menucek['menu_link'];?>"><?php echo $menucek['menu_ad'];?></a></li>
+                                  
+                                <li><a href="<?php echo $menucek['menu_link'];?>"><?php echo __d($menucek['menu_ad']);?></a></li>
                                 <?php
                                  }
                                 ?>
+                              
                             </ul>
                         </div>
                     </div>

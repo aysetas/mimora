@@ -1,9 +1,9 @@
 <?php
 include("header.php");
 ?>
-    <section class="page">
+        <section class="page">
             <div class="pageTitle">
-                <h1>İLETİŞİM</h1>
+                <h1><?php echo __d('İletişim');?></h1>
             </div>
     
         </section>
@@ -18,19 +18,19 @@ include("header.php");
                 <div class="col2">
                     <div class="container">
                         <div class="contactLower">
-                            <h3 >İletişim Formu</h3>
+                            <h3 ><?php echo __d('iletisimformu');?></h3>
                             <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
-                                <label><span class="text-form">Adınız<sup>*</sup></span>
+                                <label><span class="text-form"><?php echo __d('ad');?><sup>*</sup></span>
                                   <input type="text">
                                 </label>
                                 <label><span class="text-form">E-mail<sup>*</sup></span>
                                   <input type="text">
                                 </label>
-                                <label><span class="text-form">Mesaj<sup>*</sup></span>
+                                <label><span class="text-form"><?php echo __d('mesaj');?><sup>*</sup></span>
                                     <input type="text">
                                   </label>
                                 <div class="button"> 
-                                    <a  href="#">Gönder</a>
+                                    <a  href="#"><?php echo __d('gonder');?></a>
                                 </div>
                             </form>
                         </div>

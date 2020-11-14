@@ -11,13 +11,13 @@
                                 ?>
                                     <li>
                                         <div class="caption">
-                                        <h5><?php echo $slidercek['slider_baslik1'];?></h5>
-                                        <h1><?php echo $slidercek['slider_baslik2'];?></h1>
-                                        <p><?php echo $slidercek['slider_icerik1'];?> </p>
-                                        <p><?php echo $slidercek['slider_icerik2'];?> <strong><?php echo $slidercek['slider_fiyat'];?></strong></p>
-                                        <a href="#" class="slider-btn">SATIN AL </a> 
+                                        <h5><?php echo __d($slidercek['slider_baslik1']);?></h5>
+                                        <h1><?php echo __d($slidercek['slider_baslik2']);?></h1>
+                                        <p><?php echo __d($slidercek['slider_baslik3']);?> </p>
+                                        <p><?php echo __d($slidercek['slider_baslik4']);?> <strong><?php echo __d($slidercek['slider_fiyat']);?></strong></p>
+                                        <a href="#" class="slider-btn"><?php echo __d('satınAl');?> </a> 
                                         </div> 
-                                        <img src="<?php echo $slidercek['slider_resimyol'];?>" />
+                                        <img src="nedmin/<?php echo $slidercek['slider_resimyol'];?>" />
                                
                                     </li>
                                 <?php

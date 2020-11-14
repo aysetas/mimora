@@ -1,3 +1,4 @@
+
 <footer class="footerArea">
             <div class="container">
                 <div class="footerBody">
@@ -28,7 +29,7 @@
                                     foreach($menuliste as $menucek){
                                     
                                 ?>
-                                <li><a href="<?php echo $menucek['menu_link'];?>"><?php echo $menucek['menu_ad'];?></a></li>
+                                <li><a href="<?php echo $menucek['menu_link'];?>"><?php echo __d($menucek['menu_ad']);?></a></li>
                                 <?php
                                  }
                                 ?>
@@ -38,10 +39,10 @@
                         </div>
                         <div class="col4">
                             <div class="footerItem">
-                                <h3>BİZE ULAŞIN</h3>
+                                <h3><?php echo __d('BizeUlas');?></h3>
                                 <ul class="footerContact">
-                                    <li> <strong>Adres:</strong><?php echo $ayarcek['ayar_adres']?><br><?php echo $ayarcek['ayar_ilce'];?>/<?php echo $ayarcek['ayar_il'];?></li>
-                                    <li><strong>Telefon:</strong><?php echo $ayarcek['ayar_tel']?> </li>
+                                    <li> <strong><?php echo __d('Adres');?>:</strong><?php echo $ayarcek['ayar_adres']?><br><?php echo $ayarcek['ayar_ilce'];?>/<?php echo $ayarcek['ayar_il'];?></li>
+                                    <li><strong><?php echo __d('Telefon');?>:</strong><?php echo $ayarcek['ayar_tel']?> </li>
                                     <li><strong>Fax:</strong><?php echo $ayarcek['ayar_fax']?></li>
                                     <li><strong>Email:</strong> <a href="<?php echo $ayarcek['ayar_mail']?>"><?php echo $ayarcek['ayar_mail']?></a></li>
                                 </ul>
@@ -50,7 +51,7 @@
                         </div>
                         <div class="col4">
                             <div class="footerItem">
-                                <h3>ÖZEL ÜRÜNLER</h3>
+                                <h3><?php echo __d('ozelurun');?></h3>
                                 <div class="widget-product">
 
                                     <?php                
@@ -63,7 +64,7 @@
                                     ?>
                                     <div class="product">
                                         <div class="productimg">
-                                            <img src="<?php echo $galericek['galeri_resim'];?>" alt="saat">
+                                            <img src="nedmin/<?php echo $galericek['galeri_resim'];?>" alt="saat">
                                         </div>
                                         <div class="productText">
                                             <h5><?php echo $galericek['galeri_ad'];?></h5>
@@ -84,10 +85,11 @@
 
                     <div class="footerLower">
                         <div class="copyright">
-                            <a href="#"> Copyright &copy; 2020 |</a>
+                            <a href="#"> <?php echo __d('telifHakkı');?>&copy; 2020 |</a>
                             <span class="text">
-                                Design by:<?php echo $ayarcek['ayar_author']?>
+                            <?php echo $ayarcek['ayar_author']?>.
                             </span>
+                            <?php echo __d('haklar');?>.
             
                         </div>
                         <div class="footerImg">
