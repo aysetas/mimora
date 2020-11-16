@@ -76,7 +76,7 @@ session_start();
                             </ul>
                         </div>
                         <div class="text">
-                            <p><?php echo __d($ayarcek['ayar_text']);?><span>“<?php echo __d($ayarcek['ayar_text2']);?>”</span></p>
+                            <p><?php echo  $ayarcek['ayar_text'];?><span>“<?php echo $ayarcek['ayar_text2'];?>”</span></p>
                         </div>
 
                       

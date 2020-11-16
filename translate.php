@@ -1,6 +1,7 @@
 <?php
 
 function __d($key){
+    
     $dil = $_SESSION["dil"];
     $fileName = __DIR__.'/dil/translate.'.$dil.'.php';
     if(file_exists($fileName)){
@@ -9,10 +10,12 @@ function __d($key){
             return $dilPack[$key];
         }
         return $key;
-    }else{
+    }
+    else{
         echo 'dil dosyası yok'. $fileName;
         die();
     }
 
 
 }
+?>
